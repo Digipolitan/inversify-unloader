@@ -24,11 +24,7 @@ const testDependencies = [
     '@types/mocha',
     'mocha',
     '@types/chai',
-    'chai',
-    '@types/supertest',
-    'supertest',
-    '@types/koa-bodyparser',
-    'koa-bodyparser'
+    'chai'
 ];
 
 const baseProject = gulpTS.createProject('./tsconfig.json');

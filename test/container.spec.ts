@@ -1,6 +1,5 @@
 import {expect} from 'chai';
-import {UnloaderContainer} from '../src/unloader.container';
-import {UnloaderContainerModule} from '../src/unloader-container.module';
+import {UnloaderContainer, UnloaderContainerModule} from '../src';
 
 describe('the container', () => {
 
