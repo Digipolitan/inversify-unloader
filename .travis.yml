@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - "10"
+
+notifications:
+  email: false
+
+jobs:
+  include:
+    - stage: tests
+      before_script:
+        - npm install -g gulp-cli
+      script: gulp test
+
+    - stage: deploy
+      before_script:
+        - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+      script: gulp deploy
+
+stages:
+  - tests
+  - name: deploy
+    if: branch = master

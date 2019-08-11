@@ -1,0 +1,38 @@
+{
+  "name": "inversify-unloader",
+  "version": "1.0.0",
+  "description": "Inversify unloader container modules",
+  "author": "Benoit Briatte",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Digipolitan/inversify-unloader.git"
+  },
+  "tags": [
+    "inversify",
+    "unload",
+    "module",
+    "container",
+    "registry"
+  ],
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-file": "^0.4.0",
+    "gulp-mocha": "^6.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-shell": "^0.7.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^5.0.1",
+    "gulp-uglify": "^3.0.2",
+    "merge-stream": "^2.0.0",
+    "mocha": "^6.2.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "inversify": "^5.0.1"
+  }
+}
