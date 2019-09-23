@@ -16,13 +16,13 @@
     "registry"
   ],
   "devDependencies": {
-    "@types/chai": "^4.1.7",
+    "@types/chai": "^4.2.3",
     "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
-    "del": "^5.0.0",
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-file": "^0.4.0",
-    "gulp-mocha": "^6.0.0",
+    "gulp-mocha": "^7.0.1",
     "gulp-rename": "^1.4.0",
     "gulp-shell": "^0.7.1",
     "gulp-sourcemaps": "^2.6.5",
@@ -30,7 +30,7 @@
     "gulp-uglify": "^3.0.2",
     "merge-stream": "^2.0.0",
     "mocha": "^6.2.0",
-    "typescript": "^3.5.3"
+    "typescript": "^3.6.3"
   },
   "dependencies": {
     "inversify": "^5.0.1"

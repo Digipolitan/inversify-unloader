@@ -74,6 +74,7 @@ function preparePackageJsonTask(project) {
             delete pack.devDependencies[testDependency];
         }
         pack.main = 'lib/index.js';
+        pack.files = 'lib';
         if (project.options.declaration === true) {
             pack.types = 'lib/index.d.js';
         }
