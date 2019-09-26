@@ -1,6 +1,6 @@
 {
   "name": "inversify-unloader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Inversify unloader container modules",
   "author": "Benoit Briatte",
   "license": "BSD-3-Clause",

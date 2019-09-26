@@ -73,10 +73,9 @@ function preparePackageJsonTask(project) {
         for (let testDependency of testDependencies) {
             delete pack.devDependencies[testDependency];
         }
-        pack.main = 'lib/index.js';
-        pack.files = 'lib';
+        pack.main = 'index.js';
         if (project.options.declaration === true) {
-            pack.types = 'lib/index.d.js';
+            pack.types = 'index.d.js';
         }
         return gulpFile('package.json', JSON.stringify(pack, null, 2), { src: true })
             .pipe(gulp.dest(project.options.outDir));
@@ -95,10 +94,7 @@ gulp.task('clean', () => {
 });
 
 gulp.task('compile', compileProjectTask(tsReleaseProject));
-gulp.task('compileRelease', compileProjectTask(tsReleaseProject, {
-    outPath: 'lib',
-    uglify: true
-}));
+gulp.task('compileRelease', compileProjectTask(tsReleaseProject, { uglify: true }));
 gulp.task('compileTesting', compileProjectTask(tsTestProject));
 
 gulp.task('default', gulp.series(
